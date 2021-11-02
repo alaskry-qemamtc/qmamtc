@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Reem Kufi", sans-serif;
+  line-height: 1.6;
+  color: #005569;
+  font-size: 1.1rem;
+  direction: rtl;
+  word-spacing: 6px;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 4.1rem;
+}
+a {
+  color: #005569;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0.2rem;
+}
+.p1 {
+  color: #fff;
+  line-height: 40px;
+}
+span {
+  color: #ff0;
+}
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 2rem;
+}
+.navbar .logo {
+  width: 200px;
+}
+.navbar ul {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar a {
+  padding: 0.5rem 1rem;
+}
+.navbar a:hover {
+  color: #005569;
+  border-bottom: 3px solid #005569;
+}
+
+.hero {
+  padding: 7rem 0;
+  background-image: url("https://static.s123-cdn.com/uploads/2280764/2000_5f6c981d99886.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #005569;
+}
+.hero p {
+  margin: 1rem 0;
+}
+.btn {
+  display: inline-block;
+  background: #005569;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+.btn:hover {
+  background: rgb(86, 206, 214);
+}
+
+.about {
+  padding: 5rem 0;
+}
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.about p {
+  margin: 1rem 0;
+}
+
+.more-info {
+  position: relative;
+  background: url("https://static.s123-cdn.com/uploads/2280764/2000_5f6c97fa3abff.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 700px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(76, 109, 124, 0.7);
+}
+.more-info-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  padding: 2rem 1rem;
+}
+
+.more-info-inner h3 {
+  font-size: 4.5rem;
+}
+.more-info-inner p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#boxes {
+  margin: 7rem 1rem;
+}
+#boxes h2 {
+  color: #184f68;
+  text-align: center;
+}
+#boxes .box {
+  float: left;
+  width: 30%;
+  height: 500px;
+  text-align: center;
+  padding: 20px 20px;
+  border: 1px solid #75b4bf;
+  border-bottom: 7px solid #75b4bf;
+  margin: 10px;
+  overflow: hidden;
+}
+#boxes .box img {
+  width: 75%;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#boxes .box h3 {
+  color: #005569;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.shake-right:hover {
+  -webkit-animation: shake-right 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+  animation: shake-right 0.9s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.copyright {
+  text-align: center;
+  margin-top: 80px;
+}
+@-webkit-keyframes shake-right {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+@keyframes shake-right {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+}
+.section-contact {
+  position: relative;
+  background: url("https://static.s123-cdn.com/uploads/2280764/2000_5f6c980e9eefa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.contact-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 1rem;
+}
+.contact-inner h2 {
+  margin: 1.2rem;
+  font-size: 1.5rem;
+}
+.contact-inner p {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+}
+.section-footer {
+  background-color: #444;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 15px;
+}
+/* .section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+} */
+.section-footer .container img {
+  width: 300px;
+  float: right;
+  display: inline;
+  padding-right: 50px;
+}
+.informtion {
+  float: left;
+  padding-left: 250px;
+}
+.section-footer h4 {
+  margin-bottom: 0.9rem;
+  font-size: 1.3rem;
+}
+.section-footer a {
+  line-height: 1.9;
+  color: #ccc;
+}
+
+@media (max-width: 700px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .navbar {
+    font-size: 0.8rem;
+    word-spacing: normal;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    color: #005569;
+    font-weight: bold;
+  }
+  .about .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+  }
+  .more-info h3 {
+    font-size: 2rem;
+  }
+  #boxes .box {
+    width: 98%;
+  }
+  .section-footer {
+    padding: 2rem 0;
+  }
+  .section-footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.squer {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  border: 3px solid red;
+}
