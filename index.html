@@ -13,10 +13,9 @@
             <div class="container">
                 <img class="logo" src="images/qemam_logo.png"/>
                 <ul>
-                    <li><a class="active" href="#contact">اتصل بنا</a></li>
-                    <li><a href="#about">نحن </a></li>
+                    <li><a href="#contact">اتصل</a></li>
                     <li><a href="#serves">الخدمات </a></li>
-                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a class="active" href="#home">الرئيسية</a></li>
                 </ul>
             </div>
         </nav>
@@ -69,7 +68,7 @@
                     <div > <a href="https://api.whatsapp.com/send?phone=9660501695636" class="btn"> تواصل</a></div>
                 </div>
                 <div class="box">
-                    <img src="images/network tc.jpg" alt="Icon 1"/>
+                    <img src="images/network.jpeg" alt="Icon 1"/>
                     <h3>شبكات</h3>
                     <p>ربط جهازين أو أكثر باستخدام إحدى تقنيات نظم الاتصالات من أجل تبادل المعلومات والبيانات بينها سلكيا ولاسلكيا</p>
                     <div > <a href="https://api.whatsapp.com/send?phone=9660501695636" class="btn">تواصل</a></div>
@@ -81,7 +80,7 @@
                 <div class="contact-inner">
                     <h2>اتصل بنا لمعرفة المزيد</h2>
                     <p>
-                        تلفون: <a><span>+966-0501695636</span></a><br/>
+                        تلفون: <a href="https://api.whatsapp.com/send?phone=9660501695636" > <span>00966501695636</span></a><br/>
                         ايميل: alaskry@qmamtc.com <br>
                         اوقالت الدوام: Sun - Thr . 09:00 - 17:00
                     </p>
@@ -95,7 +94,28 @@
 
             <div class="copyright">جميع الحقوق محفوظة 2021</div>
         </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#94</button>
         <script src="js/book_story.js"></script>
-        
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script> 
     </body>
 </html>
